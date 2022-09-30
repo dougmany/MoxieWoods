@@ -4,7 +4,8 @@
   "main": "plugin.js",
   "scripts": {
     "build": "rollup -c",
-    "start": "eleventy --serve"
+    "start": "eleventy --serve --output=docs",
+    "publish": "eleventy --input=. --output=docs"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
