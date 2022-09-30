@@ -1,30 +1,16 @@
 {
+  "name": "@enhance/eleventy-plugin",
+  "version": "1.0.2",
+  "main": "plugin.js",
   "scripts": {
-    "start": "sandbox",
-    "lint": "eslint ./app/**/*.mjs --fix"
+    "build": "rollup -c",
+    "start": "eleventy --serve"
   },
   "devDependencies": {
-    "@architect/sandbox": "latest",
-    "eslint": "latest"
-  },
-  "dependencies": {
-    "@enhance/arc-plugin-enhance": "latest"
-  },
-  "eslintConfig": {
-    "env": {
-      "node": true
-    },
-    "extends": "eslint:recommended",
-    "rules": {
-      "indent": [
-        "error",
-        2
-      ]
-    },
-    "ignorePatterns": [],
-    "parserOptions": {
-      "sourceType": "module",
-      "ecmaVersion": 2022
-    }
+    "@11ty/eleventy": "^1.0.1",
+    "@enhance/ssr": "^3.0.0",
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.3.0"
   }
 }
